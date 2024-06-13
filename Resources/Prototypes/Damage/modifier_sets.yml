@@ -205,13 +205,13 @@
     Poison: 0.0
     Radiation: 0.0
 
-# immune to everything except physical and heat damage
+# immune to everything except physical and heat damage | Updated to make skells much more dangerous and should not be ignored
 - type: damageModifierSet
   id: Skeleton
   coefficients:
-    Blunt: 1.1
-    Slash: 0.8
-    Piercing: 0.6
+    Blunt: 0.2
+    Slash: 0.2
+    Piercing: 0.2
     Cold: 0.0
     Poison: 0.0
     Radiation: 0.0
@@ -220,6 +220,8 @@
     Cellular: 0.0
   flatReductions:
     Blunt: 5
+    Slash: 5
+    Piercing: 5
 
 # hurt a lot by blunt, immune to a good amount of other stuff because they're a cookie
 - type: damageModifierSet
